@@ -1,0 +1,88 @@
+
+.registration-page {
+	min-height: 100vh;
+	padding: 64px 20px;
+	background: #f2f6f3;
+}
+
+.registration-panel {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 40px;
+	border: 1px solid #dfe8e1;
+	border-top: 4px solid #32805b;
+	border-radius: 8px;
+	background: #fff;
+	box-shadow: 0 12px 30px rgb(34 65 45 / 8%);
+}
+
+.registration-header {
+	margin-bottom: 36px;
+}
+
+.registration-eyebrow {
+	margin-bottom: 8px;
+	color: #32805b;
+	font-size: 0.75rem;
+	font-weight: 700;
+}
+
+.registration-header h1 {
+	margin: 0;
+	color: #24352b;
+	font-size: 1.65rem;
+	font-weight: 700;
+}
+
+.section-title {
+	margin: 0 0 20px;
+	color: #34443a;
+	font-size: 1rem;
+	font-weight: 700;
+}
+
+.access-title {
+	margin-top: 36px;
+}
+
+.form-label {
+	margin-bottom: 8px;
+	color: #435248;
+	font-size: 0.9rem;
+	font-weight: 600;
+}
+
+.form-control,
+.form-select {
+	min-height: 48px;
+	border-color: #d7e0d9;
+}
+
+.form-control:focus,
+.form-select:focus {
+	border-color: #5a9a75;
+	box-shadow: 0 0 0 0.2rem rgb(50 128 91 / 15%);
+}
+
+.submit-button {
+	min-width: 150px;
+	margin-top: 36px;
+	padding: 10px 24px;
+	background: #32805b;
+	border-color: #32805b;
+}
+
+.submit-button:hover {
+	background: #286849;
+	border-color: #286849;
+}
+
+@media (max-width: 575.98px) {
+	.registration-page {
+		padding: 32px 16px;
+	}
+
+	.registration-panel {
+		padding: 28px 20px;
+	}
+}

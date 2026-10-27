@@ -1,0 +1,56 @@
+<main class="registration-page">
+    <section class="registration-panel" aria-labelledby="registration-title">
+        <header class="registration-header">
+            <p class="registration-eyebrow">BANANA BOX</p>
+            <h1 id="registration-title">Formulario de registro</h1>
+        </header>
+
+        <form (ngSubmit)="sendForm()">
+            <h2 class="section-title">Datos personales</h2>
+            <div class="row g-4">
+                <div class="col-12 col-md-6">
+                    <label class="form-label" for="nombre">Nombre</label>
+                    <input class="form-control" type="text" id="nombre" name="nombre" [(ngModel)]="nombreForm">
+                </div>
+                <div class="col-12 col-md-6">
+                    <label class="form-label" for="apellido">Apellido</label>
+                    <input class="form-control" type="text" id="apellido" name="apellido" [(ngModel)]="apellidoForm">
+                </div>
+                <div class="col-12 col-md-6">
+                    <label class="form-label" for="email">Email</label>
+                    <input class="form-control" type="email" id="email" name="email" [(ngModel)]="emailForm">
+                </div>
+                <div class="col-12 col-md-6">
+                    <label class="form-label" for="telefono">Teléfono</label>
+                    <input class="form-control" type="tel" id="telefono" name="telefono" [(ngModel)]="telefonoForm">
+                </div>
+                <div class="col-12 col-md-6">
+                    <label class="form-label" for="nif">NIF</label>
+                    <input class="form-control" type="text" id="nif" name="nif" [(ngModel)]="nifForm">
+                </div>
+                <div class="col-12 col-md-6">
+                    <label class="form-label" for="sexo">Sexo</label>
+                    <select class="form-select" id="sexo" name="sexo" [(ngModel)]="sexoForm">
+                        <option value="" disabled>Selecciona una opción</option>
+                        <option value="hombre">Hombre</option>
+                        <option value="mujer">Mujer</option>
+                    </select>
+                </div>
+            </div>
+
+            <h2 class="section-title access-title">Datos de acceso</h2>
+            <div class="row g-4">
+                <div class="col-12 col-md-6">
+                    <label class="form-label" for="contrasenia">Contraseña</label>
+                    <input class="form-control" type="password" id="contrasenia" name="contrasenia" [(ngModel)]="contraseniaForm">
+                </div>
+                <div class="col-12 col-md-6">
+                    <label class="form-label" for="confirmarContrasenia">Confirmar contraseña</label>
+                    <input class="form-control" type="password" id="confirmarContrasenia" name="confirmarContrasenia" [(ngModel)]="confirmarContraseniaForm">
+                </div>
+            </div>
+
+            <button class="btn btn-success submit-button" type="submit">Enviar formulario</button>
+        </form>
+    </section>
+</main>
