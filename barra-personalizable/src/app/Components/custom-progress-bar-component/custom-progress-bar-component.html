@@ -1,0 +1,9 @@
+<input class="form-control mb-2" type="number" min="0" max="100" [(ngModel)]="value">
+
+<div class="progress">
+  <div class="progress-bar bg-{{ colorForm }}" [style.width.%]="value">
+    {{ value }}
+  </div>
+</div>
+
+//el style.width es para indicar que el ancho es el valor de value.
