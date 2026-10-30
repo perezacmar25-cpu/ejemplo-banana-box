@@ -1,0 +1,7 @@
+<div class="card mb-3">
+  <img [src]="rick()?.image" [alt]="rick()?.name" class="card-img-top">
+  <div class="card-body">
+    <h5 class="card-title">{{ rick()?.name }}</h5>
+    <button type="button" class="btn btn-primary" (click)="emitRickClicked()">Show Details</button>
+  </div>
+</div>

@@ -1,0 +1,8 @@
+<h1>Ricky List</h1>
+<div class="row">
+    @for(rick of rickList(); track rick.id) {
+        <div class="col-md-3">
+            <app-ricky-item-component [rick]="rick" (rickClicked)="openRickModal($event)"></app-ricky-item-component>
+        </div>
+    }
+</div>
